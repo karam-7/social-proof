@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;  
+    font-family: 'League Spartan';
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 10vw top 0vh, right 0vw bottom 0vh;
+    padding: 50px;
+    background-color: white;
+}
+.social{
+    width: 80%;
+    padding: 50px;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.info, .rating-info, .user, .person-info{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    justify-content: space-between;
+}
+
+.info-h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    font-style:normal;
+    color: hsl(300, 43%, 22%);
+    width: 250px;
+}
+
+.info-para{
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    width: 350px;
+    color: hsl(303, 10%, 53%);
+    padding: 30px 0px;
+}
+
+.rating-info{
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.star-info1{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.star-info2{
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.star-para{
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 20px;
+    color: hsl(300, 43%, 22%);
+}
+
+.user{
+    margin-top: 90px;
+    justify-content: space-between;
+}
+
+.person{
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px;
+    margin: 20px;
+    width: 330px;
+    border-radius: 10px;
+}
+
+
+.person-img{
+    border-radius: 100%;
+    width: 50px;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.name-h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    font-style:normal;
+    color: hsl(300, 24%, 96%);
+}
+
+.name-para{
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 20px;
+    color: hsl(333, 80%, 67%);
+}
+
+
+.person-para{
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    margin-top: 30px;
+    color: hsl(300, 24%, 96%);
+    width: 90%;
+}
+
+.person-name{
+    margin-top: 5%;
+}
+
+.person-name1{
+    margin-top: 10%;
+}
+
+.foot, .foot a{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 20px;
+    color: hsl(300, 43%, 22%);
+    margin: 45px auto;
+}
+
+
+.foot a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:1080px){
+        .social{
+            margin: 50px 10px;
+            padding: 50px 10px ;
+        }
+
+
+}
+
+@media screen and (max-width:768px){
+
+    .info, .rating-info, .user{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .star-info1, .star-info2{
+        margin-left: 0px;
+    }
+    .social{
+        width: auto;
+    }
+
+    .info-h1{
+        margin-left: 10%;
+    }
+
+    .person-name1{
+        margin-top: 5%;
+    }
+
+    .star-para{
+        margin-top: 5%;
+    }
+
+    .person{
+        margin: 20px 5px;
+    }
+
+    .person-para{
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .rating-info{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:350px ){
+    .rating-info, .person, .info-para{
+        width: 250px;
+    }
+
+    .info-h1{
+        margin-left: auto;
+    }
+}
